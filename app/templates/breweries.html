@@ -2,6 +2,10 @@
 
 {% block main %}
 <p> Welcome to our Brewsite page</p>
-<p>{{ user }}</p>
+
+{% for b in content %}
+ <p>{{ b }}</p>
+
+(% endfor %)
 
 {% endblock main %}
