@@ -1,8 +1,23 @@
 {% extends "base.html" %}
 
 {% block main %}
-<p> Welcome to our beer types page</p>
-<p> There are multiple types of beers available</p>
-<p>{{ user }}</p>
+<h3 class="text-center fw-bold mt-3 mb-3">
+    Welcome to the Westside Beer Types Page!
+</h3>
 
+<h5 class="text-center fw-bold mt-3 mb-3">
+    There are multiple types of beers available
+</h5>
+
+<ul class="text-center list-unstyled">
+    <li>Lager</li>
+    <li>Ale</li>
+    <li>Stout</li>
+    <li>Porter</li>
+    <li>Pilsner</li>
+    <li>Wheat Beer</li>
+    <li>IPA (India Pale Ale)</li>
+    <li>Amber Ale</li>
+</ul>
+<p> Created by: {{ user }}</p>
 {% endblock main %}

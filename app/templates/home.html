@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 
 {% block main %}
-<p> Welcome to our Home page</p>
-<p>{{ user }}</p>
-<img src="{{ url_for('static', filename = 'images/Image.jpg') }}" alt="Cold glass of beer">
+<h3 class="text-center fw-bold mt-3 mb-3">
+    Welcome to the Westside Brewery Home Page!
+</h3>
 
+<img src="{{ url_for('static', filename='images/image-1.jpg') }}" alt="Two Beers" class="img-fluid" style="width: 30%;">
+<img src="{{ url_for('static', filename='images/image-2.jpg') }}" alt="Multiple Beers" class="img-fluid" style="width: 30%;">
+<img src="{{ url_for('static', filename='images/image-3.jpg') }}" alt="Cold glass of beer" class="img-fluid" style="width: 20%;">
+<p> Created by: {{ user }}</p>
 {% endblock main %}

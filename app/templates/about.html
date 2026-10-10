@@ -1,7 +1,16 @@
 {% extends "base.html" %}
 
 {% block main %}
-<p> Welcome to our about us page</p>
-<p>{{ user }}</p>
+<h3 class="text-center fw-bold mt-3 mb-3">
+    Welcome to the Westside Brewery About Us Page!
+</h3>
+<p class="text-center mt-3 mb-3">
+    Westside Brewery is dedicated to exploring different types
+    of beers <br> and sharing our passion for brewing.<br>
+    Our goal is to help visitors learn about breweries, <br>
+    beer styles, and the brewing world.
+</p>
+
+<p> Created by: {{ user }}</p>
 
 {% endblock main %}
